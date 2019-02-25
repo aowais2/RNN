@@ -63,3 +63,5 @@ for t in range(n_epochs):
     optimizer.step()
     
     dictlist[t] = dict(model.named_parameters())
+
+linearbiases=[dictlist[i]['linear.bias'] for i in range(5)]#To slice specific values only
