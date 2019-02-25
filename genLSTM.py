@@ -61,3 +61,5 @@ for t in range(n_epochs):
     optimizer.zero_grad()
     loss.backward()
     optimizer.step()
+    
+    dictlist[t] = dict(model.named_parameters())
